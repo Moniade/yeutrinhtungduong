@@ -4,12 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <h1>Hey. im big head</h1>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="p1">
-        <p>i haven't create a web</p>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">YêuTuQuá<span>Nhiều</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+             
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="mobile exit">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Trịnh Tùng Dương</a></li>
+                    <li><a href="#">Aka</a></li>
+                    <li><a href="#">Tu</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">Aka</a></li>
+                    <li class="go-premium-cta"><a href="#">Bed Boi</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's about showing love</p>
+                <h1>A Website To Show Love To "Tu Toi Te"</h1>
+
+                <div class="hero-cta">
+                    <a  class="primary-cta" href="#">Try Tu For Free</a>
+                    <a href="https://drive.google.com/drive/folders/1kMCvw9HKDUwxxcjLNsnQgvFv4AQB4kR8?usp=sharing" class="Watch-video-cta">
+                        <img src="images/Tu.jpg" alt="watch a video" style="width:30px;height:30px">Watch Tu's video
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/Tu.jpg" class="hero-img" alt="illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="vid">
+                <video class="yeu-dai-kho" width="1000" height="240" controls src="images/doi-duong-bi-da.mp4"></video>
+            </div>
+           
+            <ul class="features-list">
+                <li>Hãy</li>
+                <li>Hát</li>
+                <li>Để</li>
+                <li>Bày</li>
+                <li>Tỏ</li>
+                <li>Tình</li>
+                <li>Yêu</li>
+            </ul>
+
+            <img src="images/Tu.jpg" alt="holding-phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/Tu.jpg" alt="person">
+
+                    <blockquote>"Vạn vật có thể thay đổi, chỉ duy nhất tình yêu cho Tu là mãi mãi"</blockquote>
+                    <cite>-Tu con</cite>
+                </li>
+                <li>
+                    <img src="images/Tu.jpg" alt="person">
+
+                    <blockquote>"MU có thể thắng hoặc thua, nhưng Tu là của Thanh mọi người đều có thể cua"</blockquote>
+                    <cite>-Tu con</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea placeholder="hay viet tinh yeu cho duong vao day" name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29786.929715286995!2d105.80322226318128!3d21.05803075828344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aafe7260066b%3A0x4c2c988309aaa3db!2sWest%20Lake!5e0!3m2!1sen!2s!4v1694074894334!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav')
+          mobileBtnExit = document.getElementById('mobile-exit')
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn')
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn')
+        })    
+    </script>
+    
     
 </body>
 </html>
