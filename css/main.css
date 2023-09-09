@@ -99,9 +99,14 @@ section {
   background: rgb(28, 25, 25);
   color: white;
 }
-.features-section .vid {
+.features-section .tu-img {
+  width: 20%;
+  margin-bottom: 10em;
+  margin-right: 20em;
   text-align: center;
-  margin-bottom: 5em;
+}
+.features-section .vid {
+  margin-bottom: 2em;
 }
 
 ul.features-list {

@@ -103,11 +103,17 @@ section {
 }
 
 .features-section {
+    .tu-img {
+        width: 20%;
+        margin-bottom: 10em;
+        margin-right: 20em;
+        text-align: center;
+    }
+
     background: rgb(28, 25, 25);
     color: white;
     .vid {
-        text-align: center;
-        margin-bottom: 5em;
+        margin-bottom: 2em;
     }
 
 }
